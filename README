@@ -1,0 +1,8 @@
+Git friendly vim configuration, following the model laid out in the vimcast:
+
+http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+
+Includes ctags options files for php and Scala.
+
+I tend to do a lot of my editing in tabs, so there are some keybindings for
+making navigating in tabs easier.
