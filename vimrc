@@ -1,5 +1,6 @@
 " Need to install supertab and nerdtree plugins
 call pathogen#infect()
+call pathogen#helptags()
 
 set nocompatible
 
