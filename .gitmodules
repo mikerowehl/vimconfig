@@ -10,3 +10,6 @@
 	path = bundle/tagbar
     url = https://github.com/majutsushi/tagbar
     ignore = dirty
+[submodule "bundle/markdownpreview"]
+	path = bundle/markdownpreview
+	url = https://github.com/nelstrom/vim-markdown-preview.git
