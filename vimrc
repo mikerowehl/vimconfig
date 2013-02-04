@@ -4,6 +4,9 @@ call pathogen#helptags()
 
 set nocompatible
 
+" Fixup, set filetype = txt if we don't know the filetype
+autocmd BufEnter * if &filetype == "" | setlocal ft=txt | endif
+
 :set softtabstop=4
 :set shiftwidth=4
 :set tabstop=4
@@ -39,6 +42,9 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 autocmd FileType scala setlocal omnifunc=scalacomplete#CompleteTags
 autocmd FileType scala setlocal tabstop=8
+
+" Enable spell checking for text files
+autocmd FileType txt setlocal spell spelllang=en_us
 
 augroup filetypedetect 
   au BufNewFile,BufRead *.pig set filetype=pig syntax=pig 
