@@ -50,6 +50,8 @@ augroup filetypedetect
   au BufNewFile,BufRead *.pig set filetype=pig syntax=pig 
 augroup END 
 
+autocmd FileType ruby,Rakefile set sw=2 ts=2
+
 map <up> <ESC>:NERDTreeToggle<RETURN>
 map <left> <ESC>:tabp<RETURN>
 map <right> <ESC>:tabn<RETURN>
