@@ -48,6 +48,7 @@ autocmd FileType txt,markdown setlocal spell spelllang=en_us
 
 augroup filetypedetect 
   au BufNewFile,BufRead *.pig set filetype=pig syntax=pig 
+  au BufNewFile,BufRead *.go set filetype=go syntax=go 
 augroup END 
 
 autocmd FileType ruby,Rakefile set sw=2 ts=2
