@@ -58,8 +58,9 @@ map <left> <ESC>:tabp<RETURN>
 map <right> <ESC>:tabn<RETURN>
 map <down> <ESC>:TagbarToggle<RETURN>
 
+colorscheme solarized
+
 if has("gui_running")
-    colorscheme desert
     set gfn=Inconsolata:h10
     set guioptions=egmrt
 endif
