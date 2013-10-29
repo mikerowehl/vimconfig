@@ -67,13 +67,6 @@ if has("gui_running")
     set guioptions=egmrt
 endif
 
-function! Openrtb()
-    map <C-F12> :!/usr/local/bin/ctags -R -f /Users/miker/metaresolver/meta/openrtb/tags /Users/miker/metaresolver/meta/openrtb
-    set tags=/Users/miker/metaresolver/meta/openrtb/tags
-endfunction
-
-" map <F8> :!/usr/local/bin/ctags -R -f /Users/miker/metaresolver/meta/openrtb/tags /Users/miker/metaresolver/meta/openrtb<CR>
-
 let g:tagbar_type_scala = {
     \ 'ctagstype' : 'Scala',
     \ 'kinds'     : [
