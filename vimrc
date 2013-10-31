@@ -43,6 +43,8 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType scala setlocal omnifunc=scalacomplete#CompleteTags
 autocmd FileType scala setlocal tabstop=8
 
+autocmd FileType octave setlocal omnifunc=syntaxcomplete#Complete
+
 " Enable spell checking for text files
 autocmd FileType txt,markdown setlocal spell spelllang=en_us
 
@@ -51,6 +53,7 @@ augroup filetypedetect
   au BufNewFile,BufRead *.go set filetype=go syntax=go 
   au BufNewFile,BufRead Vagrantfile set filetype=ruby syntax=ruby 
   au BufNewFile,BufRead volofile,*.json set filetype=javascript syntax=javascript 
+  au BufRead,BufNewFile *.m,*.oct set filetype=octave 
 augroup END 
 
 autocmd FileType ruby,Rakefile set sw=2 ts=2
@@ -59,6 +62,8 @@ map <up> <ESC>:NERDTreeToggle<RETURN>
 map <left> <ESC>:tabp<RETURN>
 map <right> <ESC>:tabn<RETURN>
 map <down> <ESC>:TagbarToggle<RETURN>
+
+let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
 colorscheme solarized
 
