@@ -65,11 +65,13 @@ map <down> <ESC>:TagbarToggle<RETURN>
 
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
-colorscheme solarized
 
 if has("gui_running")
+    colorscheme solarized
     set gfn=Inconsolata:h10
     set guioptions=egmrt
+else
+    colorscheme desert
 endif
 
 let g:tagbar_type_scala = {
