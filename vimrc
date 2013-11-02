@@ -63,8 +63,7 @@ map <left> <ESC>:tabp<RETURN>
 map <right> <ESC>:tabn<RETURN>
 map <down> <ESC>:TagbarToggle<RETURN>
 
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-
+" let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
 if has("gui_running")
     colorscheme solarized
