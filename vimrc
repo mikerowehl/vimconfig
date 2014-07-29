@@ -1,3 +1,6 @@
+" Suppress load of neocomplete on this system
+let g:loaded_neocomplete = 1
+
 " Need to install supertab and nerdtree plugins
 call pathogen#infect()
 call pathogen#helptags()
@@ -88,3 +91,7 @@ let g:tagbar_type_scala = {
         \ 'm:methods'
     \ ]
 \ }
+
+" Insert a random error number on F8 while in insert mode.
+" For use with https://github.com/amattn/deeperror
+:imap <F8> <C-R>=system('~/bin/errorno.sh')<C-M>
